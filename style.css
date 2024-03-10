@@ -1,0 +1,57 @@
+* {
+    margin: 9px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.head {
+    position: absolute;
+    right: 40%;
+    top: 5px;
+}
+
+.img {
+    background-color: gray;
+    height: 635px;
+    width: 500px;
+}
+
+.info {
+    position: absolute;
+    right: 38%;
+    top: 10%;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+li {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.hobi {
+    font-weight: 1000;
+    position: absolute;
+    right: 54%;
+    top: 48%;
+    font-size: 33px;
+}
+
+.ulhob {
+    position: absolute;
+    right: 40%;
+    top: 53%; 
+}
+
+.steh {
+
+    font-weight: 1000;
+    font-size: 35px;
+}
+
+.gl {
+    background-color: azure;
+}

@@ -1,0 +1,10 @@
+* {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.head {
+    position: absolute;
+    right: 40%;
+    top: 5px;
+}
