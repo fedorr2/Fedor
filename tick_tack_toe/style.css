@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 110px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 1px;
+    position: absolute;
+    right: 40%;
+    top: 25%;
+}
