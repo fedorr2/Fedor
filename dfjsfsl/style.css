@@ -1,0 +1,14 @@
+.rect {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.area {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 50px 50px;
+}
