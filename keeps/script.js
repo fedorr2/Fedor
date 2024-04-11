@@ -19,6 +19,7 @@ render_keep()
 
 function render_keep() {
     let i = 0
+    
     for (let value of keeps_array) {
     const keep_template = `
     <div class ="col-3 p-2>"
