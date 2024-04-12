@@ -5,9 +5,12 @@ const btn_add = document.getElementById("btn_add");
 btn_add.onclick = add_task;
 const VisibleBtn = document.getElementById('hide')
 const TextArea = document.getElementById("input_task")
-
+const timeInp = document.getElementById("timeInput")
 VisibleBtn.onclick = visiblef
 
+
+
+timeInp.value = '                                :                                '
 
 function visiblef() {
     TextArea.hidden = !TextArea.hidden
@@ -25,8 +28,9 @@ function add_task(event){
     } else {
     if (text){
         TODO_LIST.push({title:text, status:false});
-        document.getElementById("input_task").value = '';
+        document.getElementById("input_task").value = ''
         render();
+        document.getElementById("timeInput").value = '                                :                                '
     }
 }
 }
@@ -36,9 +40,10 @@ function render(){
         const item = TODO_LIST[i];
         const todo = `<li class= "list-group-item bg-info-subtle text-dark d-flex justify-content-between">
             <span class="${item.status ? 'text-decoration-line-through': ''}">${item.title}</span>
+            <span class ="timeSpan11">${document.getElementById("timeInput").value.replace()}<span>
             <span>
-                <span class = "btn btn-success" data-type = "toggle" data-index="${i}">&#x270E;</span>
-                <span class = "btn btn-danger" data-type = "delete" data-index="${i}">&#x2613;</span>
+                <span class = "timeSpan10 btn btn-success" data-type = "toggle" data-index="${i}">&#x270E;</span>
+                <span class = "timeSpan10 btn btn-danger" data-type = "delete" data-index="${i}">&#x2613;</span>
             </span>
         </li>`;
         todo_list_elem.insertAdjacentHTML("beforeend", todo);

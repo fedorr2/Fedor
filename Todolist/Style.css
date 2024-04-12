@@ -8,3 +8,9 @@
     position: absolute;
     top: 90px;
 }
+
+#timeInput {
+    border: 3.5px solid gainsboro;
+}
+
+
